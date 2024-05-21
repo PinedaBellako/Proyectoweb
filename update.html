@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clases de Baile</title>
+</head>
+<body>
+    <h2>Registro de Clases de Baile</h2>
+    <form action="enviar.php" method="POST">
+        <!-- Campos del formulario de registro -->
+    </form>
+
+    <!-- Agregar formulario para actualizar registros -->
+    <h2>Actualizar Registro</h2>
+    <form action="actualizar.php" method="POST">
+        <label for="id">ID del Usuario a Actualizar:</label><br>
+        <input type="text" id="id" name="id" required><br>
+        
+        <label for="nombre">Nuevo Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="edad">Nueva Edad:</label><br>
+        <input type="text" id="edad" name="edad" required><br>
+        
+        <label for="email">Nuevo Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="telefono">Nuevo Teléfono:</label><br>
+        <input type="text" id="telefono" name="telefono"><br>
+        
+        <input type="submit" value="Actualizar">
+    </form>
+
+    <!-- Botón para volver al inicio -->
+    <form action="formulario2.html">
+        <button type="submit">Volver al Inicio</button>
+    </form>
+</body>
+</html>
