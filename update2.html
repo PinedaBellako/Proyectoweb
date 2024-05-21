@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clases de Baile</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(255, 253, 208, 0.5), rgba(255, 253, 208, 0.5)), url('https://via.placeholder.com/1500x1000') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff; /* Letras en blanco */
+            padding-top: 40px; /* Ajuste para centrar el formulario */
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: #ff6f00 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="center-align">Registro de Clases de Baile</h2>
+
+        <!-- Formulario para actualizar registros -->
+        <h2 class="center-align">Actualizar Registro</h2>
+        <div class="row">
+            <form action="actualizar.php" method="POST" class="col s12 form-container">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="id" type="text" class="validate white-text" name="id" required>
+                        <label for="id" class="white-text">ID del Usuario a Actualizar</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="nombre_actualizado" type="text" class="validate white-text" name="nombre" required>
+                        <label for="nombre_actualizado" class="white-text">Nuevo Nombre</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="edad_actualizada" type="text" class="validate white-text" name="edad" required>
+                        <label for="edad_actualizada" class="white-text">Nueva Edad</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email_actualizado" type="email" class="validate white-text" name="email">
+                        <label for="email_actualizado" class="white-text">Nuevo Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="telefono_actualizado" type="text" class="validate white-text" name="telefono">
+                        <label for="telefono_actualizado" class="white-text">Nuevo Teléfono</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Actualizar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Botón para volver al inicio -->
+        <div class="row">
+            <form action="formulario2.html" class="col s12">
+                <div class="input-field col s12 center-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Volver al Inicio</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
