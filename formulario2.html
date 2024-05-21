@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clases de Baile</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(255, 253, 208, 0.5), rgba(255, 253, 208, 0.5)), url('https://via.placeholder.com/1500x1000') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: #c2bdbd; /* Letras en blanco */
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: #ff6f00 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="center-align">Registro de Clases de Baile</h2>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 form-container">
+                <form action="enviar.php" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">account_circle</i>
+                            <input id="nombre" type="text" class="validate white-text" name="nombre" required>
+                            <label for="nombre" class="white-text">Nombre</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">cake</i>
+                            <input id="edad" type="text" class="validate white-text" name="edad" required>
+                            <label for="edad" class="white-text">Edad</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">email</i>
+                            <input id="email" type="email" class="validate white-text" name="email">
+                            <label for="email" class="white-text">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">phone</i>
+                            <input id="telefono" type="text" class="validate white-text" name="telefono">
+                            <label for="telefono" class="white-text">Teléfono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <form action="read.php" method="GET">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Ver Registros</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
