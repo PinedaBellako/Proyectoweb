@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clases de Baile</title>
+</head>
+<body>
+    <h2>Registro de Clases de Baile</h2>
+    <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="edad">Edad:</label><br>
+        <input type="text" id="edad" name="edad" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="telefono">Teléfono:</label><br>
+        <input type="text" id="telefono" name="telefono"><br>
+        
+        <input type="submit" value="Registrar">
+    </form>
+    
+    <!-- Agregamos un botón para redirigir a la página de visualización de registros -->
+    <form action="read.php" method="GET">
+        <input type="submit" value="Ver Registros">
+    </form>
+</body>
+</html>
